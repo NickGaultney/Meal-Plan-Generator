@@ -13,7 +13,7 @@ class RecipesController < ApplicationController
   # GET /recipes/new
   def new
     @recipe = Recipe.new
-    @ingredients = Ingredient.all
+    @ingredient = Ingredient.all
   end
 
   # GET /recipes/1/edit
