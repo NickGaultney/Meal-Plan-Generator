@@ -2,6 +2,10 @@
 
 <%= render "form", recipe: @recipe %>
 
+<% @ingredient.each do | i | %>
+  <p><%= i.name %></p>
+<% end %>
+
 <br>
 
 <div>
