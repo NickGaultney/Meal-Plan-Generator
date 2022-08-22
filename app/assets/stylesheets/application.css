@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-p.border {
+div > p {
     border-radius: 25px;
     border: 2px solid #73AD21;
     padding: 20px;
