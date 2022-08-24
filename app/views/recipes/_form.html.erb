@@ -27,6 +27,14 @@
   </div>
 
   <div>
+    <% @ingredients.each do | i | %>
+    <div class="ingredient">  
+    <p><%= i.name %></p>
+    </div>
+    <% end %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
