@@ -11,24 +11,24 @@
     </div>
   <% end %>
 
-  <div class="ingredient">
+  <div >
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
 
-  <div class="ingredient">
+  <div >
     <%= form.label :instructions, style: "display: block" %>
     <%= form.text_field :instructions %>
   </div>
 
-  <div class="ingredient">
+  <div >
     <%= form.label :meal_type, style: "display: block" %>
     <%= form.text_field :meal_type %>
   </div>
 
   <div>
     <% @ingredients.each do | i | %>
-    <div class="ingredient">  
+    <div >  
     <p><%= i.name %></p>
     </div>
     <% end %>
