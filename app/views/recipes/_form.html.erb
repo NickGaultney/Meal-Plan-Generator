@@ -37,8 +37,7 @@
   <div class="wrapper">
     <div>
       <%= form.label :ingredients, style: "display: block" %>
-      <%= form.select :ingredient, @ingredients.collect 
-          {|i| [i.name]} %>
+      <%= form.select :ingredient, @ingredients.collect {|i| [i.name]} %>
     </div>
     
     <div >
