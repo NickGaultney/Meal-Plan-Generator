@@ -35,18 +35,18 @@
   </div>
 
   <div class="wrapper">
-    <div>
+    <div id="ingredient">
       <%= form.label :ingredients, style: "display: block" %>
       <%= form.text_field :ingredient %>
       <%= form.select :ingredient, @ingredients.collect {|i| [i.name]} %>
     </div>
     
-    <div >
+    <div id="ingredient">
       <%= form.label :quantity, style: "display: block" %>
       <%= form.text_field :quantity %>
     </div>
     
-    <div >
+    <div id="ingredient">
       <%= form.label :measurement, style: "display: block" %>
       <%= form.text_field :measurement %>
     </div>
