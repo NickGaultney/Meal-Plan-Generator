@@ -10,7 +10,8 @@
       </ul>
     </div>
   <% end %>
-
+  
+<div class="wrapper_out">
   <div >
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
@@ -35,18 +36,18 @@
   </div>
 
   <div class="wrapper">
-    <div id="ingredient">
+    <div >
       <%= form.label :ingredients, style: "display: block" %>
       <%= form.text_field :ingredient %>
       <%= form.select :ingredient, @ingredients.collect {|i| [i.name]} %>
     </div>
     
-    <div id="ingredient">
+    <div >
       <%= form.label :quantity, style: "display: block" %>
       <%= form.text_field :quantity %>
     </div>
     
-    <div id="ingredient">
+    <div >
       <%= form.label :measurement, style: "display: block" %>
       <%= form.text_field :measurement %>
     </div>
@@ -55,4 +56,5 @@
   <div>
     <%= form.submit %>
   </div>
+</div>
 <% end %>
