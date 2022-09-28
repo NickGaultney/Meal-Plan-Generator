@@ -18,6 +18,7 @@ class RecipesController < ApplicationController
 
   # GET /recipes/1/edit
   def edit
+    @ingredients = Ingredient.all
   end
 
   # POST /recipes or /recipes.json
